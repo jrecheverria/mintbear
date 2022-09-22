@@ -32,7 +32,7 @@ export const Topbar = () => {
           <Navbar.Toggle css={{"@xs": {display: "none"}}} aria-label="toggle navigation"/>
           <AcmeLogo />
           <Text b color="inherit" hideIn="xs">
-            MintBear
+            <Link href="/">MintBear</Link>
           </Text>
         </Navbar.Brand>
 
@@ -78,22 +78,22 @@ export const Topbar = () => {
               <Dropdown.Item
                 key="ERC20 Token on Ethereum"
               >
-                ERC20 Token on Ethereum
+                <Link href="/ETH">ERC20 Token on Ethereum</Link>
               </Dropdown.Item>
               <Dropdown.Item
                 key="ERC20 Token on Polygon"
               >
-                ERC20 Token on Polygon
+                <Link href="/MATIC">ERC20 Token on Polygon</Link>
               </Dropdown.Item>
               <Dropdown.Item
                 key="ERC20 Token on Binance"
               >
-                ERC20 Token on Binance
+                <Link href="/BNB">ERC20 Token on Binance</Link>
               </Dropdown.Item>
               <Dropdown.Item
                 key="ERC20 Token on Avalanche"      
               >
-                ERC20 Token on Avalanche
+                <Link href="/AVAX">ERC20 Token on Avalanche</Link>
               </Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
@@ -118,7 +118,7 @@ export const Topbar = () => {
               css={{
                 minWidth: "100%",
               }}
-              href="#"
+              href={"/" + item}
             >
               {item}
             </Link>

@@ -7,10 +7,10 @@ export const FeatureCard = (props) => {
         <Card.Header>
             {props.cardIcon}
             <Spacer x={0.5}/>
-            <Text size={30}>{props.cardHeaderText}</Text>
+            <Text size={30} css={{color: "#1e2a3d"}}>{props.cardHeaderText}</Text>
          </Card.Header>
         <Card.Body>
-            <Text css={{textAlign: "left"}}>{props.cardBodyText}</Text>
+            <Text css={{textAlign: "left", color: "#1e2a3d"}}>{props.cardBodyText}</Text>
         </Card.Body>
     </Card>
   )
